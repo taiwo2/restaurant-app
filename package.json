@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/taiwo2/restaurant-app/issues"
   },
-  "homepage": "https://github.com/taiwo2/restaurant-app#readme"
+  "homepage": "https://github.com/taiwo2/restaurant-app#readme",
+  "devDependencies": {
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.6.0"
+  }
 }
