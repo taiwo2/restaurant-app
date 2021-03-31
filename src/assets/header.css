@@ -15,4 +15,22 @@
   font-size: 30px;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0;
+  border-top: 1px solid ;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: center;  
+}
+.footer-wrapper a {
+  margin-left: 5px;
+}
+
+.footer-wrapper:hover {
+  text-decoration: underline; 
+}
   
