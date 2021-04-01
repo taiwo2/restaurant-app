@@ -34,4 +34,3 @@ document.addEventListener('click', (e) => {
   if (target === 'MENU' || target === 'HERE FOR MENU') menu();
   if (target === 'ABOUT') about();
 });
-//export default createHtmlElement;

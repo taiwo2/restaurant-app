@@ -62,4 +62,4 @@ function renderMenu() {
   $content.appendChild($main);
 }
 
-export default  renderMenu;
+export default renderMenu;
