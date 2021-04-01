@@ -1,10 +1,10 @@
-import { renderNav } from "./navbar";
-import { renderHome } from "./main-home";
-import { renderFooter } from "./footer";
-import { renderMenu } from "./main-menu";
-import { renderAbout } from "./about";
+import { renderNav } from './navbar';
+import { renderHome } from './main-home';
+import { renderFooter } from './footer';
+import { renderMenu } from './main-menu';
+import { renderAbout } from './about';
 
-const $content = document.getElementById("content");
+const $content = document.getElementById('content');
 
 function createHtmlElement(type, id, arrayClasses, content) {
   const element = document.createElement(type);
@@ -18,30 +18,30 @@ function createHtmlElement(type, id, arrayClasses, content) {
 }
 
 function home() {
-  $content.innerHTML = "";
+  $content.innerHTML = '';
   renderNav();
   renderHome();
   renderFooter();
 }
 function menu() {
-  $content.innerHTML = "";
+  $content.innerHTML = '';
   renderNav();
   renderMenu();
   renderFooter();
 }
 function about() {
-  $content.innerHTML = "";
+  $content.innerHTML = '';
   renderNav();
   renderAbout();
   renderFooter();
 }
 
 home();
-document.addEventListener("click", (e) => {
+document.addEventListener('click', (e) => {
   const target = e.target.innerText;
 
-  if (target === "HOME") home();
-  if (target === "MENU" || target === "HERE FOR MENU") menu();
-  if (target === "ABOUT") about();
+  if (target === 'HOME') home();
+  if (target === 'MENU' || target === 'HERE FOR MENU') menu();
+  if (target === 'ABOUT') about();
 });
 export { createHtmlElement, $content };

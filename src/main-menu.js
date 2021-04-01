@@ -1,56 +1,56 @@
-import { $content, createHtmlElement } from "./index";
+import { $content, createHtmlElement } from './index';
 
 const menu = [
   {
-    name: "Ofada rice",
+    name: 'Ofada rice',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat, tellus sit amet",
-    price: "20$",
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat, tellus sit amet',
+    price: '20$',
   },
   {
-    name: "White soup",
+    name: 'White soup',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat, tellus sit amet",
-    price: "20$",
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat, tellus sit amet',
+    price: '20$',
   },
   {
-    name: "jollof mixture",
+    name: 'jollof mixture',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat, tellus sit amet",
-    price: "20$",
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat, tellus sit amet',
+    price: '20$',
   },
 ];
 
 function render() {
-  const $main = document.createElement("main");
-  $main.classList.add("main");
+  const $main = document.createElement('main');
+  $main.classList.add('main');
 
   const $bienvenidos = createHtmlElement(
-    "p",
+    'p',
     null,
-    ["cursive", "golden"],
-    "Tonaz Restaurant"
+    ['cursive', 'golden'],
+    'Tonaz Restaurant'
   );
-  const $title = createHtmlElement("h1", null, ["gray"], "Menu");
+  const $title = createHtmlElement('h1', null, ['gray'], 'Menu');
 
-  const $hr = document.createElement("hr");
+  const $hr = document.createElement('hr');
 
   $main.appendChild($bienvenidos);
   $main.appendChild($title);
   $main.appendChild($hr);
 
   menu.forEach((item) => {
-    const $div = createHtmlElement("div", null, ["menu-item"], null);
+    const $div = createHtmlElement('div', null, ['menu-item'], null);
 
-    const $name = createHtmlElement("h2", null, ["golden"], item.name);
+    const $name = createHtmlElement('h2', null, ['golden'], item.name);
     const $description = createHtmlElement(
-      "p",
+      'p',
       null,
-      ["gray"],
+      ['gray'],
       item.description
     );
-    const $price = createHtmlElement("h2", null, ["golden"], item.price);
-    const $hr = createHtmlElement("hr", null, ["menu-hr"], null);
+    const $price = createHtmlElement('h2', null, ['golden'], item.price);
+    const $hr = createHtmlElement('hr', null, ['menu-hr'], null);
 
     $div.appendChild($name);
     $div.appendChild($description);
