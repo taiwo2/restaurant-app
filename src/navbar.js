@@ -12,4 +12,4 @@ function renderNav() {
   $content.appendChild($nav);
 }
 
-export default renderNav };
+export default renderNav;
