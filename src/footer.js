@@ -5,8 +5,7 @@ function renderFooter() {
   const $p = createHtmlElement(
     'p',
     null,
-    ['white'],
-    'Developed with ♥ by Taiwo Adetona'
+    ['white'], 'Developed with ♥ by Taiwo Adetona'
   );
   $footer.appendChild($p);
   $content.appendChild($footer);
