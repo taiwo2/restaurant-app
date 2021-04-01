@@ -1,6 +1,6 @@
 import { $content, createHtmlElement } from './index';
 
-function render() {
+function renderAbout() {
   const $main = document.createElement('main');
   $main.classList.add('main');
 
@@ -26,4 +26,4 @@ function render() {
   $content.appendChild($main);
 }
 
-export { render as renderAbout };
+export default renderAbout;

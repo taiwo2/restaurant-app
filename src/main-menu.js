@@ -21,7 +21,7 @@ const menu = [
   },
 ];
 
-function render() {
+function  renderMenu() {
   const $main = document.createElement('main');
   $main.classList.add('main');
 
@@ -63,4 +63,4 @@ function render() {
   $content.appendChild($main);
 }
 
-export { render as renderMenu };
+export default  renderMenu;

@@ -1,6 +1,6 @@
 import { $content, createHtmlElement } from './index';
 
-function render() {
+function renderFooter() {
   const $footer = document.createElement('footer');
   const $p = createHtmlElement(
     'p',
@@ -12,4 +12,4 @@ function render() {
   $content.appendChild($footer);
 }
 
-export { render as renderFooter };
+export default renderFooter;

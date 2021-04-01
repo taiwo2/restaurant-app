@@ -1,6 +1,6 @@
 import { $content, createHtmlElement } from './index';
 
-function render() {
+function renderHome() {
   const $main = document.createElement('main');
 
   const $bienvenidos = createHtmlElement(
@@ -29,4 +29,4 @@ function render() {
   $content.appendChild($main);
 }
 
-export { render as renderHome };
+export default renderHome;
