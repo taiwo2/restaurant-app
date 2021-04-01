@@ -1,12 +1,5 @@
-function createHtmlElement(type, id, arrayClasses, content) {
-  const element = document.createElement(type);
-  if (id) element.id = id;
-  if (arrayClasses) arrayClasses.forEach((myClass) => element.classList.add(myClass));
+import createHtmlElement from './index';
 
-  if (content) element.innerText = content;
-
-  return element;
-}
 const $content = document.getElementById('content');
 
 function renderAbout() {
