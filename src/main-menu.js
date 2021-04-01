@@ -21,16 +21,11 @@ const menu = [
   },
 ];
 
-function  renderMenu() {
+function renderMenu() {
   const $main = document.createElement('main');
   $main.classList.add('main');
 
-  const $bienvenidos = createHtmlElement(
-    'p',
-    null,
-    ['cursive', 'golden'],
-    'Tonaz Restaurant'
-  );
+  const $bienvenidos = createHtmlElement('p', null, ['cursive', 'golden'], 'Tonaz Restaurant');
   const $title = createHtmlElement('h1', null, ['gray'], 'Menu');
 
   const $hr = document.createElement('hr');
@@ -43,12 +38,7 @@ function  renderMenu() {
     const $div = createHtmlElement('div', null, ['menu-item'], null);
 
     const $name = createHtmlElement('h2', null, ['golden'], item.name);
-    const $description = createHtmlElement(
-      'p',
-      null,
-      ['gray'],
-      item.description
-    );
+    const $description = createHtmlElement('p', null, ['gray'], item.description);
     const $price = createHtmlElement('h2', null, ['golden'], item.price);
     const $hr = createHtmlElement('hr', null, ['menu-hr'], null);
 

@@ -1,12 +1,10 @@
 import { $content, createHtmlElement } from './index';
 
-function render() {
+function renderNav() {
   const navItems = ['home', 'menu', 'about'];
   const $ul = document.createElement('ul');
 
-  navItems.forEach((item) =>
-    $ul.appendChild(createHtmlElement('li', null, null, item))
-  );
+  navItems.forEach((item) => $ul.appendChild(createHtmlElement('li', null, null, item)));
 
   const $nav = document.createElement('nav');
   $nav.appendChild($ul);
@@ -14,4 +12,4 @@ function render() {
   $content.appendChild($nav);
 }
 
-export { render as renderNav };
+export default renderNav };
