@@ -1,4 +1,5 @@
-import $content, { createHtmlElement } from './index';
+import  { createHtmlElement } from './index';
+const $content = document.getElementById('content');
 
 function renderAbout() {
   const $main = document.createElement('main');
