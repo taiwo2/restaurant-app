@@ -1,4 +1,5 @@
-import { createHtmlElement } from './index';
+import createHtmlElement from './index';
+
 const $content = document.getElementById('content');
 
 function renderNav() {

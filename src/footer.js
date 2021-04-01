@@ -1,6 +1,6 @@
-import { createHtmlElement } from './index';
-const $content = document.getElementById('content');
+import createHtmlElement from './index';
 
+const $content = document.getElementById('content');
 
 function renderFooter() {
   const $footer = document.createElement('footer');
