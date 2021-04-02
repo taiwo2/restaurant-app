@@ -1,4 +1,4 @@
-import { $content, createHtmlElement } from './main-menu' 
+import { $content, createHtmlElement } from './main-menu';
 
 function renderFooter() {
   const $footer = document.createElement('footer');

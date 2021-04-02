@@ -63,4 +63,4 @@ function renderMenu() {
 }
 
 export default renderMenu;
-export { $content, createHtmlElement};
+export { $content, createHtmlElement };
