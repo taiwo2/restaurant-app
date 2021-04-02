@@ -10,6 +10,8 @@
 - Run `git pull origin project`
 - On the terminal open up the live server, while in the 'Restaurant' directory:
 
+
+[Live Demo](https://tonazrestaurant.netlify.app/)
 ## Author
 
 👤 **Taiwo Adetona**
